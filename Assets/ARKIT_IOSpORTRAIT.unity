@@ -370,7 +370,8 @@ MonoBehaviour:
   _drawRadius: 0.02
   _drawResolution: 10
   _minSegmentLength: 0.005
-  tangoIspainting: 0
+  trackedObj: {fileID: 0}
+  con: {fileID: 0}
 --- !u!114 &33946238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbb162793b2a4742a795478f8f20d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tangoIspainting: 0
+  trackedObj: {fileID: 0}
   currLine: {fileID: 0}
   currLine1: {fileID: 0}
   currLine2: {fileID: 0}
@@ -5484,7 +5485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a654199df1f9164492ff837b0653f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSizer: {fileID: 1451085171}
+  controller: {fileID: 0}
   btex: {fileID: 1148421254}
   con: {fileID: 33946235}
   cursor: {fileID: 1113195355}
@@ -8255,7 +8256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22497436, guid: 916ee089a0d7b63419075f91e1c657ec, type: 2}
       propertyPath: m_SizeDelta.x
-      value: -6.5757446
+      value: -109.11911
       objectReference: {fileID: 0}
     - target: {fileID: 22448498, guid: 916ee089a0d7b63419075f91e1c657ec, type: 2}
       propertyPath: m_LocalPosition.x
@@ -9746,7 +9747,7 @@ MonoBehaviour:
   brusher: {fileID: 1380609958}
   cursor: {fileID: 1113195355}
   retexturetxt: {fileID: 0}
-  isGripped: 0
+  trackedObj: {fileID: 0}
   lastSelGameObject: {fileID: 0}
   Undoer: {fileID: 2129161451}
   eportmesh: {fileID: 182743967}

@@ -13,7 +13,7 @@ public class ColorPicker : MonoBehaviour
     private float _green = 0;
     private float _blue = 0;
 
-    private float _alpha = 1;
+    private float _alpha = 1f;
 
     public ColorChangedEvent onValueChanged = new ColorChangedEvent();
     public HSVChangedEvent onHSVChanged = new HSVChangedEvent();
@@ -35,7 +35,7 @@ public class ColorPicker : MonoBehaviour
             _alpha = value.a;
 
             RGBChanged();
-            
+
             SendChangedEvent();
         }
     }

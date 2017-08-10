@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.48878926, g: 0.51137185, b: 0.5584377, a: 1}
+  m_IndirectSpecularColor: {r: 0.20381108, g: 0.22471815, b: 0.27217188, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2462,7 +2462,7 @@ MonoBehaviour:
   brusher: {fileID: 2004329878}
   cursor: {fileID: 1916353309}
   retexturetxt: {fileID: 0}
-  isGripped: 0
+  trackedObj: {fileID: 0}
   lastSelGameObject: {fileID: 0}
   Undoer: {fileID: 484246061}
   eportmesh: {fileID: 1657690355}
@@ -8140,7 +8140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbb162793b2a4742a795478f8f20d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tangoIspainting: 0
+  trackedObj: {fileID: 0}
   currLine: {fileID: 0}
   currLine1: {fileID: 0}
   currLine2: {fileID: 0}
@@ -8213,7 +8213,8 @@ MonoBehaviour:
   _drawRadius: 0.02
   _drawResolution: 10
   _minSegmentLength: 0.005
-  tangoIspainting: 0
+  trackedObj: {fileID: 0}
+  con: {fileID: 0}
 --- !u!1001 &1881188768
 Prefab:
   m_ObjectHideFlags: 0
@@ -8722,7 +8723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a654199df1f9164492ff837b0653f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSizer: {fileID: 774086888}
+  controller: {fileID: 0}
   btex: {fileID: 1834866520}
   con: {fileID: 1869288890}
   cursor: {fileID: 1916353309}
@@ -8965,8 +8966,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eceaee97dab004cd6bd15e38bcc17e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enableDebugUI: 0
-  m_enableEnvironmentalLighting: 1
 --- !u!20 &2030387488 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5,
