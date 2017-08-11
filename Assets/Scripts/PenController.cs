@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PenController : MonoBehaviour
 {
-
+    [SerializeField] Transform StartPenCursorTransf;
     [SerializeField] Transform startTrsanform;
     [SerializeField] Transform tipTransform;
     RaycastHit raycastHit;
@@ -21,21 +21,25 @@ public class PenController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var disPos = tipTransform.position - startTrsanform.position;
-        Ray ray = new Ray(startTrsanform.position, disPos);
 
-        bool isPaper = Physics.Raycast(ray, out raycastHit, 1);
+
+        var rayCursor = new Ray(StartPenCursorTransf.position, tipTransform.position - StartPenCursorTransf.position);
+        var isPaper = Physics.Raycast(rayCursor, out raycastHit, 1);
         if (isPaper)
         {
             penPoint.transform.position = new Vector3(raycastHit.point.x, paper.transform.position.y, raycastHit.point.z);
         }
 
-        bool isCollider = Physics.Raycast(ray, disPos.magnitude);
+
+        var writeDisPos = tipTransform.position - startTrsanform.position;
+        var rayWrite = new Ray(startTrsanform.position, writeDisPos);
+        var isCollider = Physics.Raycast(rayWrite, writeDisPos.magnitude);
         if (isCollider)
         {
             if (raycastHit.transform.name == "Paper")
             {
-                BrushManager.cursorsize = brushSize;
+                var penDepth = Mathf.Clamp((startTrsanform.position - raycastHit.point).magnitude, 0.01f, 0.05f);
+                BrushManager.cursorsize = brushSize / (penDepth * 50);
             }
         }
         else
