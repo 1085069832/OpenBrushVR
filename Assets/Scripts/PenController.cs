@@ -22,14 +22,12 @@ public class PenController : MonoBehaviour
     void Update()
     {
 
-
         var rayCursor = new Ray(StartPenCursorTransf.position, tipTransform.position - StartPenCursorTransf.position);
         var isPaper = Physics.Raycast(rayCursor, out raycastHit, 1);
         if (isPaper)
         {
             penPoint.transform.position = new Vector3(raycastHit.point.x, paper.transform.position.y, raycastHit.point.z);
         }
-
 
         var writeDisPos = tipTransform.position - startTrsanform.position;
         var rayWrite = new Ray(startTrsanform.position, writeDisPos);

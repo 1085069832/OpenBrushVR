@@ -125,6 +125,8 @@
     <Compile Include="Assets\Scripts\IosPanelSwitch.cs" />
     <Compile Include="Assets\Scripts\MeshLineRenderer.cs" />
     <Compile Include="Assets\Scripts\MeshSerializer.cs" />
+    <Compile Include="Assets\Scripts\MirrorCenter.cs" />
+    <Compile Include="Assets\Scripts\MirrorPen.cs" />
     <Compile Include="Assets\Scripts\ObjExporter.cs" />
     <Compile Include="Assets\Scripts\PenController.cs" />
     <Compile Include="Assets\Scripts\PinchDraw.cs" />
