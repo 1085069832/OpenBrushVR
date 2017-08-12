@@ -127,6 +127,7 @@
     <Compile Include="Assets\Scripts\MeshSerializer.cs" />
     <Compile Include="Assets\Scripts\MirrorCenter.cs" />
     <Compile Include="Assets\Scripts\MirrorPen.cs" />
+    <Compile Include="Assets\Scripts\MyConst.cs" />
     <Compile Include="Assets\Scripts\ObjExporter.cs" />
     <Compile Include="Assets\Scripts\PenController.cs" />
     <Compile Include="Assets\Scripts\PinchDraw.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Assets\Scripts\Tango\TangoZPosition.cs" />
     <Compile Include="Assets\Scripts\Tango\depthFinder.cs" />
     <Compile Include="Assets\Scripts\ToolManager.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\UndoManager.cs" />
     <Compile Include="Assets\Scripts\ViveManager.cs" />
     <Compile Include="Assets\Scripts\dLineManager.cs" />
