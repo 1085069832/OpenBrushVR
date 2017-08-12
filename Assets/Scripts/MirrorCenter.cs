@@ -5,18 +5,47 @@ using UnityEngine;
 public class MirrorCenter : MonoBehaviour
 {
 
-    [SerializeField] Transform steamVRModel;
-    [SerializeField] Transform steamCamera;
+    [SerializeField] Transform steamVRModel;//手柄
+    [SerializeField] Transform steamCamera;//头盔
+    RaycastHit raycastHit;
+    Vector3 centerPos;//镜像中心点
+    Vector3 raycastDir;
+
+    public Vector3 CenterPos
+    {
+        get
+        {
+            return centerPos;
+        }
+    }
+
+    private void Start()
+    {
+        raycastDir = -steamCamera.right;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, steamVRModel.position.y, steamVRModel.position.z);
+        Ray ray = new Ray(steamVRModel.position, raycastDir);
+        bool isCollider = Physics.Raycast(ray, out raycastHit, 1);
+        if (isCollider)
+        {
+            if (raycastHit.transform.name == "MirrorCenter")
+                centerPos = raycastHit.point;
+        }
+        else
+        {
+            raycastDir = -raycastDir;
+        }
     }
-
-    //public void InitMirrorCenter()
-    //{
-    //    transform.position = steamCamera.position;
-    //    transform.LookAt(steamCamera);
-    //}
+    /// <summary>
+    /// 初始化位置
+    /// </summary>
+    public void InitMirrorCenter()
+    {
+        transform.position = steamCamera.position;
+        transform.rotation = steamCamera.rotation;
+        raycastDir = -steamCamera.right;
+    }
 }

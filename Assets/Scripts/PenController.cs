@@ -21,14 +21,17 @@ public class PenController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //检测纸
         var rayCursor = new Ray(StartPenCursorTransf.position, tipTransform.position - StartPenCursorTransf.position);
         var isPaper = Physics.Raycast(rayCursor, out raycastHit, 1);
         if (isPaper)
         {
-            penPoint.transform.position = new Vector3(raycastHit.point.x, paper.transform.position.y, raycastHit.point.z);
+            if (raycastHit.transform.name == "Paper")
+            {
+                penPoint.transform.position = new Vector3(raycastHit.point.x, paper.transform.position.y, raycastHit.point.z);
+            }
         }
-
+        //笔头
         var writeDisPos = tipTransform.position - startTrsanform.position;
         var rayWrite = new Ray(startTrsanform.position, writeDisPos);
         var isCollider = Physics.Raycast(rayWrite, writeDisPos.magnitude);
