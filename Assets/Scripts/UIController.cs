@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     [SerializeField] Button initMirrorCenter;
     [SerializeField] Slider udSlider;
     [SerializeField] MirrorCenter mirrorCenter;
+    [SerializeField] Text gradeText;
 
 
     private void OnEnable()
@@ -25,5 +26,10 @@ public class UIController : MonoBehaviour
     void OnChangeSceneUd(float value)
     {
         mirrorCenter.ChangeSceneUd(value);
+    }
+
+    public void ShowGradeText(float grade)
+    {
+        gradeText.text = grade + "";
     }
 }

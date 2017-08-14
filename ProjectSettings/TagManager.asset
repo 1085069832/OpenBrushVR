@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Canvas
   - Plane
+  - HzCollider
+  - HzStartCollider
   layers:
   - Default
   - TransparentFX
