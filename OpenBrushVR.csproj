@@ -259,6 +259,7 @@
     <Compile Include="Assets\VRInputModule\Scripts\ViveUILaserPointer.cs" />
     <Compile Include="Assets\VRInputModule\_demo\Scripts\DemoLaserPointerTest.cs" />
     <Compile Include="Assets\VRInputModule\_demo\Scripts\DemoMenu.cs" />
+    <Compile Include="Assets\vr cartoon hand\scripts\handanimations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Editor\TangoPrefabs\Shaders\ARPostProcess.shader" />

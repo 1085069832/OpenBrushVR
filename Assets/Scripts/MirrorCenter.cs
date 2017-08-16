@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MirrorCenter : MonoBehaviour
 {
-
     [SerializeField] Transform steamVRModel;//手柄
     [SerializeField] Transform steamCamera;//头盔
     [SerializeField] Transform scene;
@@ -51,8 +50,8 @@ public class MirrorCenter : MonoBehaviour
         transform.position = steamCamera.position;
         transform.rotation = steamCamera.rotation;
         raycastDir = -steamCamera.right;
-
     }
+
     /// <summary>
     /// 调整高度
     /// </summary>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,6 @@ public class UIController : MonoBehaviour
     [SerializeField] Slider udSlider;
     [SerializeField] MirrorCenter mirrorCenter;
     [SerializeField] Text gradeText;
-
 
     private void OnEnable()
     {
@@ -32,4 +32,5 @@ public class UIController : MonoBehaviour
     {
         gradeText.text = grade + "";
     }
+
 }

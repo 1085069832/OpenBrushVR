@@ -70,7 +70,6 @@ public class PenController : MonoBehaviour
             if (!startDraw && raycastTransf.tag == MyConst.HZSTARTCOLLIDER)
             {
 #if PLANE
-
                 if (lineManager.isCanDraw)
                 {
                     //按下trigger,并且是开始位置
