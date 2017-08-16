@@ -97,8 +97,8 @@ public class PenController : MonoBehaviour
                         cursor.LookAt(oldPos);
 
                     //平面画
-                    cursorHigh.localPosition = new Vector3(0.0015f / penDepth, 0, 0);
-                    cursorLow.localPosition = new Vector3(-0.0015f / penDepth, 0, 0);
+                    cursorHigh.localPosition = new Vector3(0.0025f / penDepth, 0, 0);
+                    cursorLow.localPosition = new Vector3(-0.0025f / penDepth, 0, 0);
 
                     //写在纸的其它地方
                     if (raycastTransf.name == MyConst.PAPER)
