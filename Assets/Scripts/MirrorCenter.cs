@@ -22,8 +22,8 @@ public class MirrorCenter : MonoBehaviour
 
     private void Start()
     {
-        raycastDir = -steamCamera.right;
         startPos = scene.position;
+        raycastDir = -steamCamera.right;
     }
 
     // Update is called once per frame
