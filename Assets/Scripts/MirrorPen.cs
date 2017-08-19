@@ -13,6 +13,7 @@ public class MirrorPen : MonoBehaviour
     {
         var model2Center = mirrirCenter.CenterPos - steamVRModel.position;
         transform.position = mirrirCenter.CenterPos + model2Center;
+
         transform.rotation = steamVRModel.parent.rotation;
     }
 }
