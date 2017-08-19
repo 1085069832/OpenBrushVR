@@ -25,6 +25,7 @@ public class PenController : MonoBehaviour
     dLineManager lineManager;
     bool startDraw;
     PlayerWriteStatu playerWriteStatu;
+    [SerializeField] GameObject startPoint;
 
     // Use this for initialization
     void Start()
@@ -73,6 +74,7 @@ public class PenController : MonoBehaviour
                 if (lineManager.isCanDraw)
                 {
                     //按下trigger,并且是开始位置
+                    startPoint.SetActive(false);
                     startDraw = true;
                 }
 #endif

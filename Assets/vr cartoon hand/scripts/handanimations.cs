@@ -26,6 +26,10 @@ public class handanimations : MonoBehaviour
 
     void Start()
     {
+    }
+
+    private void OnEnable()
+    {
         anim = GetComponent<Animator>();
         anim.SetTrigger(GrabStickFront);
     }
