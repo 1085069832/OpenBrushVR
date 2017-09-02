@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/OpenBrush_Vive.unity
+    guid: cc1669137c6a2284b83eed1a5bb24049
   - enabled: 0
-    path: Assets/UnityARKitScene.unity
+    path: 
     guid: c159f2591a9b5c843b0a0442451f78f8
   - enabled: 0
     path: 
@@ -39,11 +42,8 @@ EditorBuildSettings:
     path: Assets/OpenBrush_Tango.unity
     guid: 1f9f8c9a86260a740921edf98d36ad9a
   - enabled: 0
-    path: Assets/OpenBrush_Vive.unity
-    guid: cc1669137c6a2284b83eed1a5bb24049
-  - enabled: 0
     path: Assets/ARKIT_IOS.unity
     guid: 46c46a6f257b240409d145967ee1007a
-  - enabled: 1
+  - enabled: 0
     path: Assets/ARKIT_IOSpORTRAIT.unity
     guid: e3e172f4768f2864ebea5c06516a2b0e
